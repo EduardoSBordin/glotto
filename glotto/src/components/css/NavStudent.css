@@ -1,0 +1,58 @@
+.menuBar {
+    background: #293749;
+    width: 240px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0px;
+    position: fixed;
+    /* border-radius: 0px 15px 15px 0px; */
+}
+
+.linkMenuBar {
+    background: #f8f1eb00;
+    color: #f8f1eb;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 15px;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "Kosugi Maru", sans-serif;
+    font-size: 14pt;
+}
+
+.linkMenuBar:hover,
+.linkMenuBar2:hover {
+    background: #f8f1eb;
+    background: #ff5a1a;
+    color: #293749;
+    color: #f8f1eb;
+    box-shadow: none;
+
+    box-shadow: rgba(0, 0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.linkMenuBar2 {
+    background: #f8f1eb00;
+    color: #f8f1eb;
+    margin-top: 20px;
+    width: 77%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 15px;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "Kosugi Maru", sans-serif;
+    font-size: 14pt;
+}

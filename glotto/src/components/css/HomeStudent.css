@@ -1,0 +1,82 @@
+.divHomeStudent {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerHomeStudent {
+    background: rgba(187, 11, 11, 0);
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.imgCardHomeStudent {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    z-index: 99;
+}
+
+.cardHomeStudent {
+    background: rgba(255, 0, 0, 0);
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContent {
+    background: rgba(255, 0, 0, 0);
+    width: 240px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    position: relative;
+    margin-top: -100px;
+    transition: all .4s;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.cardContent:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.cardContent h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 90px;
+    color: #293749;
+}
+
+.cardContent button {
+    background: #ff5b1a00;
+    color: #ff5a1a;
+    border: 2px solid #ff5a1a;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .4s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.cardContent button:hover {
+    background: #ff5a1a;
+    color: #f8f1eb;
+    border: 2px solid transparent;
+}
