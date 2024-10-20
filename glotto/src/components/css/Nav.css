@@ -1,0 +1,119 @@
+.container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999;
+
+    background: rgba(255, 255, 255, 0);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+}
+
+.links {
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 700px;
+}
+
+a {
+    text-decoration: none;
+    color: #f8f1eb;
+    background: #ff5a1a;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 12pt;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+a:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: black;
+
+}
+
+.logoText {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30pt;
+    color: rgb(75, 75, 75);
+}
+
+.logoTextColor {
+    color: #cf3b00;
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -100px;
+    margin-top: 40px;
+    background: #ff5a1a;
+    width: 200px;
+    position: absolute;
+    transition: all ease-in-out .5s;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.modal.open {
+    margin-left: 350px;
+}
+
+.btnMenuModal {
+    position: fixed;
+    margin-top: -10px;
+    background: transparent;
+    border: none;
+    color: #ff5a1a;
+    font-size: 24pt;
+    display: none;
+}
+
+
+.btnMenuModal::after {
+    content: '=';
+}
+
+.btnMenuModal.icon::after {
+    content: 'x';
+}
+
+
+@media (max-width: 1200px) {
+    .links {
+        display: none;
+    }
+
+    a {
+        background: transparent;
+        margin-left: 20px;
+    }
+
+    a:hover {
+        box-shadow: none;
+        color: black;
+    }
+
+    .btnMenuModal {
+        display: block;
+    }
+
+    .modal {
+        display: flex;
+    }
+}

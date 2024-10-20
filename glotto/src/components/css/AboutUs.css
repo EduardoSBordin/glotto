@@ -1,0 +1,45 @@
+.pTextAboutUs {
+    margin-top: 80px;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50pt;
+    text-align: end;
+    flex-wrap: wrap;
+    color: #f8f1eb;
+    margin-top: 150px;
+}
+
+.logoTextColorAboutUs {
+    color: #ff5a1a;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pAboutUs {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f8f1eb;
+    font-size: 20pt;
+    width: 70%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width:600px) {
+    .aboutUs {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .pTextAboutUs {
+        font-size: 35pt;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
