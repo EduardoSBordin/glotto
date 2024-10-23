@@ -22,3 +22,11 @@
 body {
     background: #f8f1eb;
 }
+
+@media (max-width: 800px) {
+
+    .contentLogin {
+        margin-left: 0px;
+    }
+
+}

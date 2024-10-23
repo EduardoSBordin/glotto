@@ -1,4 +1,16 @@
 .menuBar {
+    background: #29374900;
+    background: rgba(0, 128, 0, 0);
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: fixed;
+    z-index: 100;
+}
+
+.menuBarDesk {
     background: #293749;
     width: 240px;
     height: 100vh;
@@ -7,7 +19,33 @@
     align-items: end;
     gap: 0px;
     position: fixed;
-    /* border-radius: 0px 15px 15px 0px; */
+    z-index: 100;
+}
+
+.btnMenuBarMobile {
+    background: #ff5a1a;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    transition: all ease-in-out .4s;
+    font-family: "Kosugi Maru", sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 0px 100% 0px;
+}
+
+.btnMenuBarMobile.activeMenuStudent {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.btnMenuBarMobile::after {
+    content: '=';
+}
+
+.btnMenuBarMobile.activeMenuStudent::after {
+    content: 'x';
 }
 
 .linkMenuBar {
@@ -55,4 +93,21 @@
     cursor: pointer;
     font-family: "Kosugi Maru", sans-serif;
     font-size: 14pt;
+}
+
+@media (MAX-WIDTH:800px) {
+    .menuBarDesk {
+        margin-left: -500px;
+        transition: all ease-in-out .4s;
+        position: relative;
+    }
+
+    .menuBarDesk.activeMenuStudent {
+        margin-left: 0px;
+    }
+
+    .btnMenuBarMobile {
+        position: relative;
+    }
+
 }

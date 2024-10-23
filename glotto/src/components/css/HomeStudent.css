@@ -61,6 +61,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 90px;
     color: #293749;
+    width: 90%;
+    text-align: center;
+    width: fit-content;
+    font-size: 100%;
 }
 
 .cardContent button {
@@ -79,4 +83,11 @@
     background: #ff5a1a;
     color: #f8f1eb;
     border: 2px solid transparent;
+}
+
+@media (max-width:800px) {
+    .containerHomeStudent {
+        align-items: start;
+        justify-content: center;
+    }
 }
