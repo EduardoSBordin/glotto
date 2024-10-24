@@ -1,6 +1,5 @@
 .menuBar {
     background: #29374900;
-    background: rgba(0, 128, 0, 0);
     width: auto;
     height: 100vh;
     display: flex;
@@ -16,10 +15,9 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    gap: 0px;
     position: fixed;
     z-index: 100;
+    align-items: center;
 }
 
 .btnMenuBarMobile {
@@ -51,9 +49,9 @@
 .linkMenuBar {
     background: #f8f1eb00;
     color: #f8f1eb;
-    margin-top: 20px;
-    width: 90%;
-    border-radius: 20px 0px 0px 20px;
+    margin-top: 0px;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
     padding: 15px;
     transition: all 0.2s;
     display: flex;
@@ -73,7 +71,7 @@
     color: #293749;
     color: #f8f1eb;
     box-shadow: none;
-
+    font-size: 16pt;
     box-shadow: rgba(0, 0, 0, 0) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -95,6 +93,12 @@
     font-size: 14pt;
 }
 
+.profileImgBadge {
+    width: 70%;
+    height: auto;
+    background: rgba(255, 0, 0, 0);
+}
+
 @media (MAX-WIDTH:800px) {
     .menuBarDesk {
         margin-left: -500px;
@@ -109,5 +113,4 @@
     .btnMenuBarMobile {
         position: relative;
     }
-
 }

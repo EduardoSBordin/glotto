@@ -1,6 +1,7 @@
-import '../../css/NavStudent.css'
+import '../css/NavStudent.css'
 import { Link, useNavigate } from 'react-router-dom'
 import React, { useState } from 'react';
+import profileBadge from '../contentGraph/profileBadge2.png'
 
 export function NavStudent({ setActiveComponent }) {
 
@@ -23,10 +24,10 @@ export function NavStudent({ setActiveComponent }) {
 
             <button onClick={activeMenu} className={`btnMenuBarMobile ${active ? 'activeMenuStudent' : ''}`}></button>
 
-            {/* <h1 className={active ? 'activeMenu' : ''}>Testando</h1> */}
-
             <div className={`menuBarDesk ${active ? 'activeMenuStudent' : ''}`}>
 
+                <img src={profileBadge} alt="Not Suported" className='profileImgBadge' />
+                <br />
                 <button className='linkMenuBar' onClick={() => setActiveComponent('HomeStudent')}>
                     <span className="material-symbols-outlined"> home </span>Inicio</button>
 
@@ -41,6 +42,9 @@ export function NavStudent({ setActiveComponent }) {
 
                 <button className='linkMenuBar' onClick={() => setActiveComponent('GameStudent')}>
                     <span className="material-symbols-outlined">draw</span>Atividades</button>
+
+                <button className='linkMenuBar' onClick={() => setActiveComponent('GameStudent')}>
+                    <span className="material-symbols-outlined">supervisor_account</span>Professores</button>
 
                 <button className='linkMenuBar' onClick={backClick}>
                     <span className="material-symbols-outlined">logout</span>Sair</button>

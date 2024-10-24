@@ -26,7 +26,7 @@ body {
 }
 
 .aboutUs {
-    background: #141414;
+    background: #293749;
     width: 100%;
     height: 100vh;
 }
@@ -62,8 +62,19 @@ body {
     border: 1px solid #fd5d19;
 }
 
+.login:hover {
+    background: #293749;
+    color: white;
+    border: 1px solid #293749;
+}
+
 .signUp {
     background: #fd5d19;
+}
+
+.signUp:hover {
+    background: #293749;
+    color: white;
 }
 
 .linksHome {

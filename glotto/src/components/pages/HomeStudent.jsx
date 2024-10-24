@@ -11,10 +11,10 @@ export function HomeStudent() {
         <div className='divHomeStudent'>
             <div className="containerHomeStudent">
 
-                <div className='cardHomeStudent'>
+                <div className='cardHomeStudent '>
                     <img src={whats} alt="" className='imgCardHomeStudent' />
 
-                    <div className='cardContent'>
+                    <div className='cardContent cardPurple'>
                         <h1>Qual é o animal ?</h1>
                         <button>Começar tarefa</button>
                     </div>
