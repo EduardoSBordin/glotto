@@ -27,7 +27,9 @@ export function QuizGameTranslate() {
         <section className="containerQuizGameTranslate">
 
             <div className="barProgress">
-                <button onClick={() => navigate(-1)}>Voltar</button>
+                <button onClick={() => navigate(-1)}><span class="material-symbols-outlined">
+                    arrow_back_ios_new
+                </span></button>
 
                 <div className="progress">
                     <div className="bar"></div>
