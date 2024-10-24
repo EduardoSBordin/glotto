@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { useState } from "react";
 import '../css/QuizGameTranslate.css'
+import Questions from "./Questions";
 
 export function QuizGameTranslate() {
 
@@ -37,7 +38,9 @@ export function QuizGameTranslate() {
             </div>
 
             <div className="contentQuizGame">
-                <h1>Conteúdo...</h1>
+                <div className="questions">
+                    <Questions />
+                </div>
                 <button onClick={barPlus}>Test</button>
             </div>
 
