@@ -22,7 +22,7 @@ export function GameStudent() {
 
                     <div className='cardContent cardPurple'>
                         <h1>Quiz de Tradução</h1>
-                        <Link to='/quizgametranslate'>Começar tarefa</Link>
+                        <Link to='/quizgametranslate' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 

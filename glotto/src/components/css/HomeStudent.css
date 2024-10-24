@@ -94,4 +94,16 @@
         align-items: start;
         justify-content: center;
     }
+
+    .cardContent .btnGameStudent {
+        background: #ff5b1a00;
+        color: #ff5a1a;
+        border: 2px solid #ff5a1a;
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all .4s;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+    }
 }
