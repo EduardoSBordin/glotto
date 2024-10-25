@@ -15,6 +15,8 @@ export function QuizGameTranslate() {
                     arrow_back_ios_new
                 </span></button>
 
+
+
                 <div className="progress">
                     <div className="bar"></div>
                 </div>

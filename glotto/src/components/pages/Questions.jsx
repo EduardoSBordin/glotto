@@ -97,39 +97,39 @@ function Questions() {
                     <h1>Hello, How are you ?</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a1" id="a1" />
-                        <label htmlFor="a1">Escolha 1</label>
+                        <label htmlFor="a1">Olá, Como você está ?</label>
 
                         <input type="radio" name="choose" value="a2" id="a2" />
-                        <label htmlFor="a2">Escolha 2</label>
+                        <label htmlFor="a2">Olá, você está com fome ?</label>
                     </div>
 
-                    <button onClick={q1} className="btnCheck">Checar</button>
+                    <button onClick={q1} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="question2">
                     <h1>It's good to see you.</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a3" id="a3" />
-                        <label htmlFor="a3">Escolha 1</label>
+                        <label htmlFor="a3">É bom ver você.</label>
 
                         <input type="radio" name="choose" value="a4" id="a4" />
-                        <label htmlFor="a4">Escolha 2</label>
+                        <label htmlFor="a4">Você está de férias.</label>
                     </div>
 
-                    <button onClick={q2} className="btnCheck">Checar</button>
+                    <button onClick={q2} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="question3">
                     <h1>Good morning.</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a5" id="a5" />
-                        <label htmlFor="a5">Escolha 1</label>
+                        <label htmlFor="a5">Bom dia.</label>
 
                         <input type="radio" name="choose" value="a6" id="a6" />
-                        <label htmlFor="a6">Escolha 2</label>
+                        <label htmlFor="a6">Boa tarde.</label>
                     </div>
 
-                    <button onClick={q3} className="btnCheck">Checar</button>
+                    <button onClick={q3} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="finished">

@@ -4,10 +4,11 @@
 
 .containerQuestions {
     /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
-    width: 60%;
-    height: auto;
+    width: 100vh;
+    height: 100vh;
     padding: 20px;
     margin-top: 10px;
+    transition: all .4s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +18,9 @@
 .chooses {
     display: flex;
     flex-direction: column;
-
+    background: rgba(255, 0, 0, 0);
+    width: 50%;
+    height: auto;
 }
 
 
@@ -26,6 +29,9 @@
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 10px;
 
     input+label {
         margin: 0;
@@ -33,11 +39,14 @@
         box-sizing: border-box;
         position: relative;
         display: inline-block;
-        border: solid 1px #DDD;
-        background-color: #FFF;
+        border: solid 0px #DDD;
+        border-radius: 25px;
+        background-color: #293749;
+        color: #ff5a1a;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1rem;
         line-height: 140%;
-        font-weight: 600;
+        font-weight: bolder;
         text-align: center;
         box-shadow: 0 0 0 rgba(255, 255, 255, 0);
         transition: border-color .15s ease-out,
@@ -51,7 +60,7 @@
 
 
     input:checked+label {
-        background-color: red;
+        background: #ff5a1a;
         color: white;
         z-index: 1;
     }
@@ -67,7 +76,38 @@
     display: none;
 }
 
+.question1,
+.question2,
+.question3,
+.finished {
+    background: rgba(0, 255, 115, 0);
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.question1 h1,
+.question2 h1,
+.question3 h1,
+.finished h1 {
+    color: #293749;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    font-weight: bolder;
+}
+
+.btnChechContent {
+    margin-top: 30px;
+    width: 100px;
+}
+
 input[type="radio"] {
     visibility: hidden;
 
+}
+
+@media (max-width:800px) {
+    .containerQuestions {
+        margin-top: 20%;
+    }
 }
