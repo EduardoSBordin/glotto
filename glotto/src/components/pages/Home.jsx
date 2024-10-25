@@ -3,10 +3,13 @@ import '../css/Home.css'
 import '../css/Course.css'
 import '../css/AboutUs.css'
 import { Link } from 'react-router-dom'
-
 import svgHome from '../contentGraph/svgHome.svg'
+import Typewriter from "../scripts/Typewriter"
+import TestText from '../scripts/TestText'
 
 export function Home() {
+
+
 
     return (
         <div className="containerHome">
@@ -15,7 +18,10 @@ export function Home() {
             <section className="home" id="home">
 
                 <div className="content">
-                    <p className="pTextHome">O <span className="logoTextColor">melhor</span> lugar para <span className='logoTextColor'>aprender</span> um novo<span className='logoTextColor'>idioma</span>.</p>
+                    {/* <p className="pTextHome">O <span className="logoTextColor">melhor</span> lugar para <span className='logoTextColor'> aprender </span> um novo <span className='logoTextColor'>idioma</span>.</p> */}
+                    <p className="pTextHome">
+                        <Typewriter text={`O melhor lugar para aprender um novo idioma.`} speed={60} />
+                    </p>
 
                     <div className="linksHome">
                         <Link to='/' className="signUp">Começar curso</Link>
