@@ -1,6 +1,5 @@
 import '../css/Login.css'
 import { NavStudent } from '../scripts/NavStudent'
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { HomeStudent } from './HomeStudent';
 import { GameStudent } from './GameStudent';
 import { QuizGameTranslate } from './QuizGameTranslate';
