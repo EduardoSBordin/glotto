@@ -31,7 +31,7 @@ export function GameStudent() {
 
                     <div className='cardContent'>
                         <h1>Complete a frase</h1>
-                        <button>Começar tarefa</button>
+                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 
@@ -40,20 +40,16 @@ export function GameStudent() {
 
                     <div className='cardContent'>
                         <h1>Escolha a imagem</h1>
-                        <button>Começar tarefa</button>
+                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
-
-            </div>
-
-            <div className="containerHomeStudent">
 
                 <div className='cardHomeStudent'>
                     <img src={trueOrFalse} alt="" className='imgCardHomeStudent' />
 
                     <div className='cardContent'>
                         <h1>Verdadeiro ou Falso.</h1>
-                        <button onClick={() => setActiveComponent('QuizGameTranslate')}>Começar tarefa</button>
+                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 
@@ -62,7 +58,7 @@ export function GameStudent() {
 
                     <div className='cardContent'>
                         <h1>Quiz de Cronómetro</h1>
-                        <button>Começar tarefa</button>
+                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 
@@ -71,10 +67,41 @@ export function GameStudent() {
 
                     <div className='cardContent'>
                         <h1>Jogo da memória</h1>
-                        <button>Começar tarefa</button>
+                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
+
             </div>
+
+            {/* <div className="containerHomeStudent">
+
+                <div className='cardHomeStudent'>
+                    <img src={trueOrFalse} alt="" className='imgCardHomeStudent' />
+
+                    <div className='cardContent'>
+                        <h1>Verdadeiro ou Falso.</h1>
+                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
+                    </div>
+                </div>
+
+                <div className='cardHomeStudent'>
+                    <img src={timer} alt="" className='imgCardHomeStudent' />
+
+                    <div className='cardContent'>
+                        <h1>Quiz de Cronómetro</h1>
+                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
+                    </div>
+                </div>
+
+                <div className='cardHomeStudent'>
+                    <img src={memoryGame} alt="" className='imgCardHomeStudent' />
+
+                    <div className='cardContent'>
+                        <h1>Jogo da memória</h1>
+                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
+                    </div>
+                </div>
+            </div> */}
 
         </div>
     )

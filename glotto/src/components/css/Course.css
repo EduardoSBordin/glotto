@@ -5,7 +5,7 @@
     align-items: center;
     background: #fd5d19;
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding-bottom: 50px;
     background-image: linear-gradient(to top, #ff5c1b, #ff8a4a, #ff8c3f, #ff9d52, #f7f2ee);
 }

@@ -3,19 +3,21 @@
 }
 
 .containerQuestions {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
     width: 60%;
-    height: 200px;
+    height: auto;
     padding: 20px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
 }
 
 .chooses {
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -55,6 +57,17 @@
     }
 }
 
+.question1 {
+    display: block;
+}
+
+.question2,
+.question3,
+.finished {
+    display: none;
+}
+
 input[type="radio"] {
     visibility: hidden;
+
 }
