@@ -5,7 +5,6 @@ import '../css/AboutUs.css'
 import { Link } from 'react-router-dom'
 import svgHome from '../contentGraph/svgHome.svg'
 import Typewriter from "../scripts/Typewriter"
-import TestText from '../scripts/TestText'
 
 export function Home() {
 

@@ -126,10 +126,10 @@ function TrueOrFalseQuestions() {
                     <h1>Tradução:<br /> "Eu gosto de ler livros."</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a5" id="a5" />
-                        <label htmlFor="a5">Bom dia.</label>
+                        <label htmlFor="a5">Verdadeiro.</label>
 
                         <input type="radio" name="choose" value="a6" id="a6" />
-                        <label htmlFor="a6">Boa tarde.</label>
+                        <label htmlFor="a6">Falso.</label>
                     </div>
 
                     <button onClick={q3} className="btnCheck btnChechContent">Checar</button>

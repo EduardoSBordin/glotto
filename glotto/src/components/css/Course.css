@@ -51,7 +51,7 @@
     justify-content: space-evenly;
 
     /* Faz a animação aparecer */
-    animation: appear 5s linear;
+    animation: appear 1s linear;
 
     /* Faz a animação aparecer somente quando acontece o scroll */
     animation-timeline: view();

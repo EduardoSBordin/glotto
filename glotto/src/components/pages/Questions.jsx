@@ -77,7 +77,7 @@ function Questions() {
                 console.log('Errado')
             }
 
-            document.querySelector('.finished').style.display = 'block';
+            document.querySelector('.finishedTrueOrFalse').style.display = 'block';
             document.querySelector('.question3').style.display = 'none';
 
             barPlus();
@@ -132,7 +132,7 @@ function Questions() {
                     <button onClick={q3} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
-                <div className="finished">
+                <div className="finishedTrueOrFalse">
                     <h1>Você acertou: {score} questões(ão)</h1>
 
                 </div>
