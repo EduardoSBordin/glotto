@@ -1,6 +1,6 @@
 import '../css/Questions.css'
 import { useState } from 'react';
-function Questions() {
+function TrueOrFalseQuestions() {
 
     // let count = 0;
     // let score = 0;
@@ -53,7 +53,7 @@ function Questions() {
         let getA4 = document.querySelector('#a4');
 
         if (getA3.checked || getA4.checked) {
-            if (getA3.checked) {
+            if (getA4.checked) {
                 setScore(prevScore => prevScore + 1);
             }
             document.querySelector('.question2').style.display = 'none';
@@ -77,7 +77,7 @@ function Questions() {
                 console.log('Errado')
             }
 
-            document.querySelector('.finished').style.display = 'block';
+            document.querySelector('.finishedTrueOrFalse').style.display = 'block';
             document.querySelector('.question3').style.display = 'none';
 
             barPlus();
@@ -94,33 +94,36 @@ function Questions() {
             <div className="chooses">
 
                 <div className="question1">
-                    <h1>Hello, How are you ?</h1>
+                    <h1>Frase em Inglês:<br /> "The cat is on the table."</h1>
+                    <h1>Tradução:<br /> "O gato está em cima da mesa."</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a1" id="a1" />
-                        <label htmlFor="a1">Olá, Como você está ?</label>
+                        <label htmlFor="a1">Verdadeiro</label>
 
                         <input type="radio" name="choose" value="a2" id="a2" />
-                        <label htmlFor="a2">Olá, você está com fome ?</label>
+                        <label htmlFor="a2">Falso</label>
                     </div>
 
                     <button onClick={q1} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="question2">
-                    <h1>It's good to see you.</h1>
+                    <h1>Frase em Inglês:<br /> "She has three brothers."</h1>
+                    <h1>Tradução:<br /> "Ela tem três irmãs."</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a3" id="a3" />
-                        <label htmlFor="a3">É bom ver você.</label>
+                        <label htmlFor="a3">Verdadeiro</label>
 
                         <input type="radio" name="choose" value="a4" id="a4" />
-                        <label htmlFor="a4">Você está de férias.</label>
+                        <label htmlFor="a4">Falso</label>
                     </div>
 
                     <button onClick={q2} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="question3">
-                    <h1>Good morning.</h1>
+                    <h1>Frase em Inglês:<br /> "I like reading books."</h1>
+                    <h1>Tradução:<br /> "Eu gosto de ler livros."</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a5" id="a5" />
                         <label htmlFor="a5">Bom dia.</label>
@@ -132,13 +135,13 @@ function Questions() {
                     <button onClick={q3} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
-                <div className="finished">
+                <div className="finishedTrueOrFalse">
                     <h1>Você acertou: {score} questões(ão)</h1>
 
                 </div>
             </div>
 
-        </section>
+        </section >
     )
 }
-export default Questions
+export default TrueOrFalseQuestions

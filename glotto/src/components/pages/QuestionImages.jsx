@@ -1,6 +1,14 @@
-import '../css/Questions.css'
+import '../css/QuestionImages.css'
 import { useState } from 'react';
-function Questions() {
+
+import dog from '../contentGraph/Question-Images/dog.png'
+import bird from '../contentGraph/Question-Images/bird.png'
+import bear from '../contentGraph/Question-Images/bear.png'
+import giraffe from '../contentGraph/Question-Images/giraffe.png'
+import cow from '../contentGraph/Question-Images/cow.png'
+import duck from '../contentGraph/Question-Images/duck.png'
+
+function QuestionImages() {
 
     // let count = 0;
     // let score = 0;
@@ -37,8 +45,8 @@ function Questions() {
                 console.log('Errado')
             }
 
-            document.querySelector('.question1').style.display = 'none';
-            document.querySelector('.question2').style.display = 'block';
+            document.querySelector('.question1Image').style.display = 'none';
+            document.querySelector('.question2Image').style.display = 'block';
 
             barPlus();
             console.log(score);
@@ -56,8 +64,8 @@ function Questions() {
             if (getA3.checked) {
                 setScore(prevScore => prevScore + 1);
             }
-            document.querySelector('.question2').style.display = 'none';
-            document.querySelector('.question3').style.display = 'block';
+            document.querySelector('.question2Image').style.display = 'none';
+            document.querySelector('.question3Image').style.display = 'block';
 
             barPlus();
 
@@ -78,7 +86,7 @@ function Questions() {
             }
 
             document.querySelector('.finished').style.display = 'block';
-            document.querySelector('.question3').style.display = 'none';
+            document.querySelector('.question3Image').style.display = 'none';
 
             barPlus();
 
@@ -89,44 +97,56 @@ function Questions() {
     }
 
     return (
-        <section className='containerQuestions'>
+        <section className='containerQuestionsImages'>
 
-            <div className="chooses">
+            <div className="choosesImage">
 
-                <div className="question1">
-                    <h1>Hello, How are you ?</h1>
-                    <div className="toggle">
+                <div className="question1Image">
+                    <h1>Dog</h1>
+                    <div className="toggleImage">
                         <input type="radio" name="choose" value="a1" id="a1" />
-                        <label htmlFor="a1">Olá, Como você está ?</label>
+                        <label htmlFor="a1">{
+                            <img src={dog} alt="" className='imgQuestionImages' />
+                        }</label>
 
                         <input type="radio" name="choose" value="a2" id="a2" />
-                        <label htmlFor="a2">Olá, você está com fome ?</label>
+                        <label htmlFor="a2">{
+                            <img src={bird} alt="" className='imgQuestionImages' />
+                        }</label>
                     </div>
 
                     <button onClick={q1} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
-                <div className="question2">
-                    <h1>It's good to see you.</h1>
-                    <div className="toggle">
+                <div className="question2Image">
+                    <h1>Bear</h1>
+                    <div className="toggleImage">
                         <input type="radio" name="choose" value="a3" id="a3" />
-                        <label htmlFor="a3">É bom ver você.</label>
+                        <label htmlFor="a3">{
+                            <img src={bear} alt="" className='imgQuestionImages' />
+                        }</label>
 
                         <input type="radio" name="choose" value="a4" id="a4" />
-                        <label htmlFor="a4">Você está de férias.</label>
+                        <label htmlFor="a4">{
+                            <img src={giraffe} alt="" className='imgQuestionImages' />
+                        }</label>
                     </div>
 
                     <button onClick={q2} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
-                <div className="question3">
-                    <h1>Good morning.</h1>
-                    <div className="toggle">
+                <div className="question3Image">
+                    <h1>Cow</h1>
+                    <div className="toggleImage">
                         <input type="radio" name="choose" value="a5" id="a5" />
-                        <label htmlFor="a5">Bom dia.</label>
+                        <label htmlFor="a5">{
+                            <img src={cow} alt="" className='imgQuestionImages' />
+                        }</label>
 
                         <input type="radio" name="choose" value="a6" id="a6" />
-                        <label htmlFor="a6">Boa tarde.</label>
+                        <label htmlFor="a6">{
+                            <img src={duck} alt="" className='imgQuestionImages' />
+                        }</label>
                     </div>
 
                     <button onClick={q3} className="btnCheck btnChechContent">Checar</button>
@@ -141,4 +161,4 @@ function Questions() {
         </section>
     )
 }
-export default Questions
+export default QuestionImages

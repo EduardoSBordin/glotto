@@ -5,7 +5,6 @@ import memoryGame from '../contentGraph/memoryGame.png'
 import chooseIMG from '../contentGraph/chooseIMG.png'
 import trueOrFalse from '../contentGraph/trueOrFalse.png'
 import timer from '../contentGraph/timer.png'
-import { QuizGameTranslate } from './QuizGameTranslate'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
@@ -31,7 +30,7 @@ export function GameStudent() {
 
                     <div className='cardContent'>
                         <h1>Complete a frase</h1>
-                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
+                        <Link to='/completephrase' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 
@@ -40,7 +39,7 @@ export function GameStudent() {
 
                     <div className='cardContent'>
                         <h1>Escolha a imagem</h1>
-                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
+                        <Link to='/ChooseImage' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 
@@ -49,7 +48,7 @@ export function GameStudent() {
 
                     <div className='cardContent'>
                         <h1>Verdadeiro ou Falso.</h1>
-                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
+                        <Link to='/trueorfalse' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 

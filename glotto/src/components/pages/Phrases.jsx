@@ -1,6 +1,6 @@
 import '../css/Questions.css'
 import { useState } from 'react';
-function Questions() {
+function Phrases() {
 
     // let count = 0;
     // let score = 0;
@@ -94,39 +94,39 @@ function Questions() {
             <div className="chooses">
 
                 <div className="question1">
-                    <h1>Hello, How are you ?</h1>
+                    <h1>Are you ___?</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a1" id="a1" />
-                        <label htmlFor="a1">Olá, Como você está ?</label>
+                        <label htmlFor="a1">OK</label>
 
                         <input type="radio" name="choose" value="a2" id="a2" />
-                        <label htmlFor="a2">Olá, você está com fome ?</label>
+                        <label htmlFor="a2">Apple</label>
                     </div>
 
                     <button onClick={q1} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="question2">
-                    <h1>It's good to see you.</h1>
+                    <h1>Bring me my ___ please.</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a3" id="a3" />
-                        <label htmlFor="a3">É bom ver você.</label>
+                        <label htmlFor="a3">Shirt.</label>
 
                         <input type="radio" name="choose" value="a4" id="a4" />
-                        <label htmlFor="a4">Você está de férias.</label>
+                        <label htmlFor="a4">House.</label>
                     </div>
 
                     <button onClick={q2} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="question3">
-                    <h1>Good morning.</h1>
+                    <h1>Chicago is ____ different from Boston.</h1>
                     <div className="toggle">
                         <input type="radio" name="choose" value="a5" id="a5" />
-                        <label htmlFor="a5">Bom dia.</label>
+                        <label htmlFor="a5">Very.</label>
 
                         <input type="radio" name="choose" value="a6" id="a6" />
-                        <label htmlFor="a6">Boa tarde.</label>
+                        <label htmlFor="a6">Hug.</label>
                     </div>
 
                     <button onClick={q3} className="btnCheck btnChechContent">Checar</button>
@@ -141,4 +141,4 @@ function Questions() {
         </section>
     )
 }
-export default Questions
+export default Phrases
