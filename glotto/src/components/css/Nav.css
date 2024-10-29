@@ -64,10 +64,10 @@ a:hover {
 
 .logoTextColor {
     color: #ff5a1a;
-    /* text-shadow: -1px 1px 0 #000,
-        1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000; */
+    text-shadow: -1px 1px 0 #293749,
+        1px 1px 0 #293749,
+        1px -1px 0 #293749,
+        -1px -1px 0 #293749;
 }
 
 .modal {
@@ -92,7 +92,7 @@ a:hover {
     margin-top: -10px;
     background: transparent;
     border: none;
-    color: #ff5a1a;
+    color: #293749;
     font-size: 24pt;
     display: none;
 }
