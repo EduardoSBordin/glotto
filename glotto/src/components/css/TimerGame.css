@@ -1,0 +1,8 @@
+.bar {
+    transition: linear .5s;
+}
+
+.progress {
+    border: 2px solid #d0ff00;
+    padding: 5px;
+}

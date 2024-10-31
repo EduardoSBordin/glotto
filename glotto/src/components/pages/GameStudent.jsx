@@ -57,7 +57,7 @@ export function GameStudent() {
 
                     <div className='cardContent'>
                         <h1>Quiz de Cronómetro</h1>
-                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
+                        <Link to='/timergame' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 

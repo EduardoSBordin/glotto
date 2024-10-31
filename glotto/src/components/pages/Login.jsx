@@ -17,8 +17,8 @@ export function Login() {
             case 'GameStudent':
                 return <GameStudent />
 
-            case 'QuizGameTranslate':
-                return <QuizGameTranslate />
+            // case 'QuizGameTranslate':
+            //     return <QuizGameTranslate />
 
             default:
                 return <HomeStudent />

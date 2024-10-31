@@ -6,6 +6,7 @@ import { QuizGameTranslate } from './components/pages/QuizGameTranslate';
 import { CompletePhrase } from './components/pages/CompletePhrase';
 import { ChooseImage } from './components/pages/ChooseImage';
 import { TrueOrFalse } from './components/pages/TrueOrFalse';
+import { TimerGame } from './components/pages/TimerGame';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/CompletePhrase' element={<CompletePhrase />} />
           <Route path='/ChooseImage' element={<ChooseImage />} />
           <Route path='/TrueOrFalse' element={<TrueOrFalse />} />
+          <Route path='/timergame' element={<TimerGame />} />
         </Routes>
       </BrowserRouter>
     </>
