@@ -2,6 +2,7 @@ import '../css/NavStudent.css'
 import { Link, useNavigate } from 'react-router-dom'
 import React, { useState } from 'react';
 import profileBadge from '../contentGraph/profileBadge2.png'
+import ButtonMenu from './ButtonMenu';
 
 export function NavStudent({ setActiveComponent }) {
 
@@ -28,26 +29,63 @@ export function NavStudent({ setActiveComponent }) {
 
                 <img src={profileBadge} alt="Not Suported" className='profileImgBadge' />
                 <br />
-                <button className='linkMenuBar' onClick={() => setActiveComponent('HomeStudent')}>
-                    <span className="material-symbols-outlined"> home </span>Inicio</button>
 
-                <button className='linkMenuBar' onClick={() => setActiveComponent('GameStudent')}>
-                    <span className="material-symbols-outlined">joystick</span>Jogos</button>
+                <ButtonMenu
+                    className='linkMenuBar'
+                    onClick={() => setActiveComponent('HomeStudent')}
+                    nameBtn='Inicio'
+                    iconCode="material-symbols-outlined"
+                    iconName='home'
+                />
 
-                <button className='linkMenuBar' onClick={() => setActiveComponent('GameStudent')}>
-                    <span className="material-symbols-outlined">school</span>Curso</button>
+                <ButtonMenu
+                    className='linkMenuBar'
+                    onClick={() => setActiveComponent('GameStudent')}
+                    nameBtn='Jogos'
+                    iconCode="material-symbols-outlined"
+                    iconName='joystick'
+                />
 
-                <button className='linkMenuBar' onClick={() => setActiveComponent('GameStudent')}>
-                    <span className="material-symbols-outlined">book</span>Histórias</button>
+                <ButtonMenu
+                    className='linkMenuBar'
+                    onClick={() => setActiveComponent('GameStudent')}
+                    nameBtn='Curso'
+                    iconCode="material-symbols-outlined"
+                    iconName='school'
+                />
 
-                <button className='linkMenuBar' onClick={() => setActiveComponent('GameStudent')}>
-                    <span className="material-symbols-outlined">draw</span>Atividades</button>
+                <ButtonMenu
+                    className='linkMenuBar'
+                    onClick={() => setActiveComponent('GameStudent')}
+                    nameBtn='Histórias'
+                    iconCode="material-symbols-outlined"
+                    iconName='book'
+                />
 
-                <button className='linkMenuBar' onClick={() => setActiveComponent('GameStudent')}>
-                    <span className="material-symbols-outlined">supervisor_account</span>Professores</button>
+                <ButtonMenu
+                    className='linkMenuBar'
+                    onClick={() => setActiveComponent('GameStudent')}
+                    nameBtn='Atividades'
+                    iconCode="material-symbols-outlined"
+                    iconName='draw'
+                />
 
-                <button className='linkMenuBar' onClick={backClick}>
-                    <span className="material-symbols-outlined">logout</span>Sair</button>
+                <ButtonMenu
+                    className='linkMenuBar'
+                    onClick={() => setActiveComponent('GameStudent')}
+                    nameBtn='Professores'
+                    iconCode="material-symbols-outlined"
+                    iconName='supervisor_account'
+                />
+
+                <ButtonMenu
+                    className='linkMenuBar'
+                    onClick={(backClick)}
+                    nameBtn='Sair'
+                    iconCode="material-symbols-outlined"
+                    iconName='logout'
+                />
+
             </div>
         </section >
     )
