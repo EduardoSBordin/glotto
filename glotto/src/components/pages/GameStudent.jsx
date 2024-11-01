@@ -56,7 +56,7 @@ export function GameStudent() {
                     <img src={timer} alt="" className='imgCardHomeStudent' />
 
                     <div className='cardContent'>
-                        <h1>Quiz de Cronómetro</h1>
+                        <h1>Quiz de Cronômetro</h1>
                         <Link to='/timergame' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
@@ -65,8 +65,8 @@ export function GameStudent() {
                     <img src={memoryGame} alt="" className='imgCardHomeStudent' />
 
                     <div className='cardContent'>
-                        <h1>Jogo da memória</h1>
-                        <Link to='/' className='btnGameStudent'>Começar tarefa</Link>
+                        <h1>Tradução Inversa</h1>
+                        <Link to='/translatergame' className='btnGameStudent'>Começar tarefa</Link>
                     </div>
                 </div>
 
