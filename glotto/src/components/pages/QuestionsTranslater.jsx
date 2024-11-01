@@ -32,7 +32,7 @@ function QuestionsTranslater() {
 
         if (q1.length >= 1) {
 
-            if (q1Lower === 'hi') {
+            if (q1Lower === 'obrigado') {
                 setScore(prevScore => prevScore + 1);
                 console.log('Correct answer.');
             } else {
@@ -40,7 +40,7 @@ function QuestionsTranslater() {
             }
 
             document.querySelector('.question1').style.display = 'none';
-            document.querySelector('.question2').style.display = 'block';
+            document.querySelector('.question2').style.display = 'flex';
 
             barPlus();
             console.log(score);
@@ -56,7 +56,7 @@ function QuestionsTranslater() {
 
         if (q2.length >= 1) {
 
-            if (q2Lower === 'hello') {
+            if (q2Lower === 'que horas são?' || q2Lower === 'que horas são ?') {
                 setScore(prevScore => prevScore + 1);
                 console.log('Correct answer.');
             } else {
@@ -64,7 +64,7 @@ function QuestionsTranslater() {
             }
 
             document.querySelector('.question2').style.display = 'none';
-            document.querySelector('.question3').style.display = 'block';
+            document.querySelector('.question3').style.display = 'flex';
 
             barPlus();
             console.log(score);
@@ -79,7 +79,7 @@ function QuestionsTranslater() {
 
         if (q3.length >= 1) {
 
-            if (q3Lower === 'bye') {
+            if (q3Lower === 'desculpa') {
                 setScore(prevScore => prevScore + 1);
                 console.log('Correct answer.');
             } else {
@@ -114,25 +114,25 @@ function QuestionsTranslater() {
 
 
                 <div className="question1 questionTranslater1">
-                    <h1>Hello, good morning !</h1>
+                    <h1>Thank you.</h1>
 
-                    <input type="text" name="q1" id="q1" placeholder='Digite aqui a tradução.' autoComplete='off' />
+                    <input type="text" name="q1" id="q1" className='inputTxt' placeholder='Digite aqui a tradução.' autoComplete='off' />
 
                     <button onClick={q1} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="question2 questionTranslater2">
-                    <h1>It's good to see you.</h1>
+                    <h1>"What time is it?</h1>
 
-                    <input type="text" name="q2" id="q2" placeholder='Digite aqui a tradução.' autoComplete='off' />
+                    <input type="text" name="q2" id="q2" className='inputTxt' placeholder='Digite aqui a tradução.' autoComplete='off' />
 
                     <button onClick={q2} className="btnCheck btnChechContent">Checar</button>
                 </div>
 
                 <div className="question3 questionTranslater3">
-                    <h1>Good morning.</h1>
+                    <h1>Excuse me</h1>
 
-                    <input type="text" name="q3" id="q3" placeholder='Digite aqui a tradução.' autoComplete='off' />
+                    <input type="text" name="q3" id="q3" className='inputTxt' placeholder='Digite aqui a tradução.' autoComplete='off' />
 
                     <button onClick={q3} className="btnCheck btnChechContent">Checar</button>
                 </div>
