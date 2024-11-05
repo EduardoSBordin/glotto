@@ -39,7 +39,7 @@ export function Home() {
 
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1440 319">
+                        viewBox="0 0 1440 310">
                         <path
                             fill="#fd5d19"
                             fillOpacity="1"
