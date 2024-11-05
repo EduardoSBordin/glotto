@@ -1,6 +1,6 @@
 body {
     /* background: #f8f1eb; */
-    background: #fd5d19;
+    /* background: #fd5d19; */
 }
 
 /* section {
@@ -15,8 +15,8 @@ body {
 }
 
 .home {
-    /* background: #f8f1eb; */
     background-image: linear-gradient(to bottom, #ff5c1b, #ff8a4a, #ff8c3f, #ff9d52, #f7f2ee);
+    background: #f8f1eb;
     margin-top: 60px;
     display: flex;
     flex-direction: row;
