@@ -30,13 +30,13 @@ export function NavStudent({ setActiveComponent }) {
                 <img src={profileBadge} alt="Not Suported" className='profileImgBadge' />
                 <br />
 
-                <ButtonMenu
+                {/* <ButtonMenu
                     className='linkMenuBar'
                     onClick={() => setActiveComponent('HomeStudent')}
                     nameBtn='Inicio'
                     iconCode="material-symbols-outlined"
                     iconName='home'
-                />
+                /> */}
 
                 <ButtonMenu
                     className='linkMenuBar'
@@ -48,7 +48,7 @@ export function NavStudent({ setActiveComponent }) {
 
                 <ButtonMenu
                     className='linkMenuBar'
-                    onClick={() => setActiveComponent('GameStudent')}
+                    onClick={() => setActiveComponent('CourseStudent')}
                     nameBtn='Curso'
                     iconCode="material-symbols-outlined"
                     iconName='school'

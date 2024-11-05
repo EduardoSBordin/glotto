@@ -3,6 +3,7 @@ import { NavStudent } from '../scripts/NavStudent'
 import { HomeStudent } from './HomeStudent';
 import { GameStudent } from './GameStudent';
 import { QuizGameTranslate } from './QuizGameTranslate';
+import CourseStudent from './CourseStudent';
 import { useState } from 'react';
 
 export function Login() {
@@ -16,6 +17,9 @@ export function Login() {
 
             case 'GameStudent':
                 return <GameStudent />
+
+            case 'CourseStudent':
+                return <CourseStudent />
 
             // case 'QuizGameTranslate':
             //     return <QuizGameTranslate />
