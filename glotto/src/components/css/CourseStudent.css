@@ -49,12 +49,13 @@ body {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    cursor: pointer;
 }
 
 .linkClass:hover {
     background: #ff7439;
     color: white;
-
+    cursor: pointer;
 }
 
 .iconTextClassLink {

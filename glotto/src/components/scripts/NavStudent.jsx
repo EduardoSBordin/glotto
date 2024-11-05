@@ -10,7 +10,7 @@ export function NavStudent({ setActiveComponent }) {
     let navigate = useNavigate();
 
     function backClick() {
-        navigate(-1);
+        navigate('/');
     }
 
     const [active, setActive] = useState(false);

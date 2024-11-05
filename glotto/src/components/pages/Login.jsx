@@ -24,8 +24,8 @@ export function Login() {
             // case 'QuizGameTranslate':
             //     return <QuizGameTranslate />
 
-            default:
-                return <HomeStudent />
+            // default:
+            //     return activeComponent
         }
     }
 

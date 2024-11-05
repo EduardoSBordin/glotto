@@ -8,6 +8,8 @@ import { ChooseImage } from './components/pages/ChooseImage';
 import { TrueOrFalse } from './components/pages/TrueOrFalse';
 import { TimerGame } from './components/pages/TimerGame';
 import { TranslaterGame } from './components/pages/TranslaterGame';
+import Class1Beginner from './components/pages/Class1Beginner';
+
 
 function App() {
 
@@ -33,6 +35,7 @@ function App() {
           <Route path='/TrueOrFalse' element={<TrueOrFalse />} />
           <Route path='/timergame' element={<TimerGame />} />
           <Route path='/translatergame' element={<TranslaterGame />} />
+          <Route path='/Class1Beginner' element={<Class1Beginner />} />
         </Routes>
       </BrowserRouter>
     </>

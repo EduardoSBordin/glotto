@@ -64,6 +64,10 @@
     font-size: 14pt;
 }
 
+button .linkMenuBar {
+    cursor: pointer;
+}
+
 .linkMenuBar:hover,
 .linkMenuBar2:hover {
     background: #f8f1eb;

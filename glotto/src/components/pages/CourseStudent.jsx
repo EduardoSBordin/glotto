@@ -8,8 +8,8 @@ function CourseStudent() {
                 <h1>Iniciante</h1>
 
                 <div className="classContent">
-                    <Link to='/' className='linkClass'>
-                        <span class="material-symbols-outlined iconTextClassLink">book_2</span>
+                    <Link to='/class1beginner' className='linkClass'>
+                        <span className="material-symbols-outlined iconTextClassLink">book_2</span>
                         <span className='textClassLink'>Módulo 01 - Aula 01: Cumprimentos, apresentações e despedidas</span>
                     </Link>
 
@@ -24,12 +24,12 @@ function CourseStudent() {
                     </Link>
 
                     <Link to='/' className='linkClass'>
-                        <span class="material-symbols-outlined iconTextClassLink">book_2</span>
+                        <span className="material-symbols-outlined iconTextClassLink">book_2</span>
                         <span className='textClassLink'>Módulo 01 - Aula 04: A Estrutura Básica da Língua Inglesa</span>
                     </Link>
 
                     <Link to='/' className='linkClass'>
-                        <span class="material-symbols-outlined iconTextClassLink">book_2</span>
+                        <span className="material-symbols-outlined iconTextClassLink">book_2</span>
                         <span className='textClassLink'>Módulo 01 - Aula 05: Números em inglês de 0 à 100</span>
                     </Link>
 
