@@ -27,7 +27,7 @@ export function Nav() {
             <div className='linksMobile'>
                 <button onClick={changeClass} className={`btnMenuModal ${iconBtn ? 'icon' : ''}`}></button>
 
-                <div className={`modal ${active ? "" : "open"}`}>
+                <div className={`modal ${active ? "" : "openMenuHome"}`}>
 
                     <a href="#navHome"><span className="material-symbols-outlined">home</span>Inicio</a>
 
