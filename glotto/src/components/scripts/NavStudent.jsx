@@ -17,15 +17,21 @@ export function NavStudent({ setActiveComponent }) {
 
     function activeMenu() {
         setActive(!active);
+        document.querySelector('.menuBarDesk').classList.add('activeMenuStudent');
+        document.querySelector('.btnMenuBarMobile').classList.add('activeMenuStudent');
     }
 
+    function close() {
+        document.querySelector('.menuBarDesk').classList.remove('activeMenuStudent');
+        document.querySelector('.btnMenuBarMobile').classList.remove('activeMenuStudent');
+    }
 
     return (
         <section className="menuBar">
 
             <button onClick={activeMenu} className={`btnMenuBarMobile ${active ? 'activeMenuStudent' : ''}`}></button>
 
-            <div className={`menuBarDesk ${active ? 'activeMenuStudent' : ''}`}>
+            <div className={`menuBarDesk ${active ? 'activeMenuStudent' : ''} `}>
 
                 <img src={profileBadge} alt="Not Suported" className='profileImgBadge' />
                 <br />
@@ -40,7 +46,10 @@ export function NavStudent({ setActiveComponent }) {
 
                 <ButtonMenu
                     className='linkMenuBar'
-                    onClick={() => setActiveComponent('GameStudent')}
+                    onClick={() => {
+                        setActiveComponent('GameStudent')
+                        close()
+                    }}
                     nameBtn='Jogos'
                     iconCode="material-symbols-outlined"
                     iconName='joystick'
@@ -48,7 +57,10 @@ export function NavStudent({ setActiveComponent }) {
 
                 <ButtonMenu
                     className='linkMenuBar'
-                    onClick={() => setActiveComponent('CourseStudent')}
+                    onClick={() => {
+                        setActiveComponent('CourseStudent')
+                        close()
+                    }}
                     nameBtn='Curso'
                     iconCode="material-symbols-outlined"
                     iconName='school'
@@ -56,7 +68,10 @@ export function NavStudent({ setActiveComponent }) {
 
                 <ButtonMenu
                     className='linkMenuBar'
-                    onClick={() => setActiveComponent('GameStudent')}
+                    onClick={() => {
+                        setActiveComponent('CourseStudent')
+                        close()
+                    }}
                     nameBtn='Histórias'
                     iconCode="material-symbols-outlined"
                     iconName='book'
@@ -64,7 +79,10 @@ export function NavStudent({ setActiveComponent }) {
 
                 <ButtonMenu
                     className='linkMenuBar'
-                    onClick={() => setActiveComponent('GameStudent')}
+                    onClick={() => {
+                        setActiveComponent('CourseStudent')
+                        close()
+                    }}
                     nameBtn='Atividades'
                     iconCode="material-symbols-outlined"
                     iconName='draw'
