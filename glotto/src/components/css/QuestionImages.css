@@ -94,7 +94,7 @@
 .question3Image,
 .finished {
     background: rgba(0, 255, 115, 0);
-    width: 100vh;
+    width: 100%;
     height: auto;
     text-align: center;
     background: rgba(0, 128, 0, 0);
