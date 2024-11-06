@@ -70,13 +70,13 @@ export function NavStudent({ setActiveComponent }) {
                     iconName='draw'
                 />
 
-                <ButtonMenu
+                {/* <ButtonMenu
                     className='linkMenuBar'
                     onClick={() => setActiveComponent('GameStudent')}
                     nameBtn='Professores'
                     iconCode="material-symbols-outlined"
                     iconName='supervisor_account'
-                />
+                /> */}
 
                 <ButtonMenu
                     className='linkMenuBar'
