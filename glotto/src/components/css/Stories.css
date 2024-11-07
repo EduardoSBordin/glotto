@@ -21,7 +21,7 @@
 .textStorie h2 {
     margin-top: 100px;
     color: rgb(61, 61, 61);
-    font-family: cursive;
+    font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .textStorie p {
