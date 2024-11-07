@@ -69,7 +69,7 @@ export function NavStudent({ setActiveComponent }) {
                 <ButtonMenu
                     className='linkMenuBar'
                     onClick={() => {
-                        setActiveComponent('CourseStudent')
+                        setActiveComponent('HistoriesStudent')
                         close()
                     }}
                     nameBtn='Histórias'

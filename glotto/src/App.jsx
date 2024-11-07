@@ -10,6 +10,8 @@ import { TimerGame } from './components/pages/TimerGame';
 import { TranslaterGame } from './components/pages/TranslaterGame';
 import Class1Beginner from './components/pages/Class1Beginner';
 
+import Storie1 from './components/pages/StoriesStudent/Storie1';
+
 
 function App() {
 
@@ -36,6 +38,7 @@ function App() {
           <Route path='/timergame' element={<TimerGame />} />
           <Route path='/translatergame' element={<TranslaterGame />} />
           <Route path='/Class1Beginner' element={<Class1Beginner />} />
+          <Route path='/Storie1' element={<Storie1 />} />
         </Routes>
       </BrowserRouter>
     </>

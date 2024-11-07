@@ -2,7 +2,7 @@ import '../css/Login.css'
 import { NavStudent } from '../scripts/NavStudent'
 import { HomeStudent } from './HomeStudent';
 import { GameStudent } from './GameStudent';
-import { QuizGameTranslate } from './QuizGameTranslate';
+import HistoriesStudent from './HistoriesStudent';
 import CourseStudent from './CourseStudent';
 import { useState } from 'react';
 
@@ -20,6 +20,9 @@ export function Login() {
 
             case 'CourseStudent':
                 return <CourseStudent />
+
+            case 'HistoriesStudent':
+                return <HistoriesStudent />
 
             // case 'QuizGameTranslate':
             //     return <QuizGameTranslate />
